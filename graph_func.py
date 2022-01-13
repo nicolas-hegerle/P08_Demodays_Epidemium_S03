@@ -111,6 +111,8 @@ def plot_summary_stats(train_dfs, val_dfs, row_names, width = 50, height = 30):
 
     max_pred = max(max_pred) + 1
     max_os = train_dfs[0]['os'].max() + 1
+    if max_pred >= 100:
+        max_pred = int(max_os + 0.5 * max_os)
 
     assert nb_rows == len(val_dfs)
     assert nb_rows == len(row_names)

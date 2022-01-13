@@ -138,3 +138,9 @@ src/gradcam_save/
 src/sorted_img/
 src/test/
 src/train/
+.DS_Store
+src/.DS_Store
+src/tf_logs
+
+# Py scripts
+predict.py
