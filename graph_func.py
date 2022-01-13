@@ -74,8 +74,6 @@ def plot_summary_graphs(df_all, df_train, df_val, cell_type = None, width = 30, 
     ax10.tick_params(labelrotation=70)
     ax10.set(ylim = (0, max_pred))
 
-    fig.show()
-
     return fig, ax
 
 def plot_summary_stats(train_dfs, val_dfs, row_names, width = 50, height = 30):
@@ -125,9 +123,9 @@ def plot_summary_stats(train_dfs, val_dfs, row_names, width = 50, height = 30):
     cols = ['Target labels: train (dark) and val (lite) sets', \
     'Predicted labels: train (dark) and val (light) sets', \
     'Predictions vs true labels (train set)', \
-    'Absolute error between prediction and true label (train set)', \
+    'Absolute error prediction vs true label (train set)', \
     'Predictions vs true labels (validation set)', \
-    'Absolute error between prediction and true label (validation set)'
+    'Absolute error prediction vs true label (validation set)'
     ]
 
     if nb_rows > 1:
