@@ -133,7 +133,6 @@ raw_data/
 model/
 biblio/
 archive/
-png/
 src/gradcam_save/
 src/sorted_img/
 src/test/
