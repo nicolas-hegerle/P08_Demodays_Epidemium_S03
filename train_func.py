@@ -304,7 +304,7 @@ def convnet(height, width, channels):
         activation = "relu"
     ),
     BatchNormalization(), MaxPool2D(),
-    GlobalAveragePooling2D(), # turns multi-dimensional images into flat objects
+    GlobalAveragePooling2D(),
     Dense(512, activation="relu"),
     Dropout(rate = 0.1),
     Dense(512, activation = "relu"),
